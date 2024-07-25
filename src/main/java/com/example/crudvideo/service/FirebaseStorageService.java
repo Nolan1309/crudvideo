@@ -33,7 +33,7 @@ public class FirebaseStorageService {
     @EventListener
     public void init(ApplicationReadyEvent event) {
         try {
-            ClassPathResource serviceAccount = new ClassPathResource("thanhson.json");
+            ClassPathResource serviceAccount = new ClassPathResource("thanhson2.json");
             storage = StorageOptions.newBuilder().
                     setCredentials(GoogleCredentials.fromStream(serviceAccount.getInputStream())).
                     setProjectId("thanhsonlab11").build().getService();
